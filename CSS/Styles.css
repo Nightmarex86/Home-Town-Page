@@ -9,6 +9,67 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: lightgray;
+}
+#navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+#navbar.scrolled {
+    background-color: #222;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+    background-color: #575757;
+    transition: background-color 0.3s ease;
+}
+
+#navbar .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#logo-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+#navbar .logo:hover {
+    color: skyblue;
+}
+
+#navbar .menu {
+    display: flex;
+    gap: 10px;
+}
+
+#navbar .menu-item {
+    list-style: none;
 }
 
 #hero-container {
@@ -42,4 +103,17 @@ body {
     color: white;
     padding-top:7px;
     margin-left:100px;
+}
+.guidance-text{
+    margin-top: 20px;
+    margin-bottom:20px;
+    text-align: center;
+}
+#content-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:30px;
+    text-align: center;
+    gap: 50px;
 }
