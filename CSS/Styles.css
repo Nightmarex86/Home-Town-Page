@@ -1,0 +1,10 @@
+body{
+    margin:0;
+    padding:0;
+}
+#hero-container{
+    background-image: url(../Images/Anfeh-Hero-BG.jpg);
+    background-size: cover;
+    height:400px;
+    text-align: center;
+}
