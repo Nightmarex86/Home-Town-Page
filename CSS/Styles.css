@@ -1,10 +1,45 @@
-body{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#hero-container{
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#hero-container {
     background-image: url(../Images/Anfeh-Hero-BG.jpg);
     background-size: cover;
-    height:400px;
+    height: 400px;
+    display:flex;
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.arabic-title {
+    box-shadow: 1px 2px 2px black;
+    text-shadow: 1px 1px 2px black;
+    transform: skew(-20deg);
+    background-color:aqua;
+    width: 300px;
+    font-size: 50px;
+    color: white;
+    margin-bottom:50px;
+}
+.english-title {
+    box-shadow: 2px 3px 2px black;
+    text-shadow: 1px 1px 2px black;
+    transform: skew(20deg);
+    background-color: darkblue;
+    width: 300px;
+    height:50px;
+    font-size: 30px;
+    color: white;
+    padding-top:7px;
+    margin-left:100px;
 }
